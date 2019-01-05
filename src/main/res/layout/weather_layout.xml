@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/weather_layout"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1">
+       <ImageView
+           android:layout_width="175dp"
+           android:layout_height="135dp"
+           android:src="@drawable/sunnymorecloud"
+           android:layout_gravity="center_horizontal"
+           android:id="@+id/weather_icon" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/wea_temp"
+           android:layout_gravity="center_horizontal"
+           android:text="晴 15~20 C"
+           android:textSize="30dp"/>
+
+       <TextView
+           android:id="@+id/airquality"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="空气质量：优\nPM2.5:20m"
+           android:textSize="20dp"
+           android:layout_gravity="center_horizontal"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="81dp"
+           android:layout_height="35dp"
+           android:src="@drawable/cloudyrain"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="明天天气       20~30C  "
+           android:gravity="center_horizontal"
+           android:layout_gravity="center_vertical"
+           android:textSize="20dp"/>
+   </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:src="@drawable/hot"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="后天天气       20~26C  "
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:src="@drawable/littlerain"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第三天天气       20~25C  "
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:src="@drawable/sunnymorecloud"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第四天天气       19~28C  "
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:src="@drawable/littlerain"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第五天天气       20~30C  "
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:src="@drawable/weathericon_condition_11"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第六天天气       22~30C  "
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

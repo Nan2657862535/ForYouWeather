@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.nan.foryou.MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.example.nan.foryou.MyScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/test">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ProgressBar
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="正在刷新呢"-->
+                        <!--android:textSize="20dp"-->
+                        <!--android:gravity="center"/>-->
+
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <android.support.v4.view.ViewPager
+                            android:layout_width="match_parent"
+                            android:layout_height="600dp"
+                            android:id="@+id/showWeather"
+                            android:layout_weight="1">
+                        </android.support.v4.view.ViewPager>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="最新资讯:\n通过对本市1985—1989年五年内收治的1466例小儿肺炎的临床资料及同期的气象资料分析，我发现，每年的2—5月是小儿肺炎发病最高期，为38.7％，7—8月是低谷期。小儿肺炎发病与气温、气压、相对湿度、日照及冷空气活动都有一定的关系。特别是气温，气压变化影响尤为显著。每年的10月至下年的5月南方冷空气活动和寒潮频繁，冷空气使人的鼻粘膜温度降低，肺的通气量减少，气管纤毛的活动能力降低。小儿本身对外界气候变化的适应调节能力就差，再加上此期多连阴雨天气，日照时间减少，阳光中紫外线对空气中致病微生物的杀灭作用相对减弱。这些都是诱发肺炎的原因。因此，在小儿肺炎的防治与护理中应注意两个方面。第一，时时注意天气变化情况，这主要是及时收听天气预报和天气形势的预报，特别注意气温、气压变化，比如冷空气寒潮到来前后的几天内，注意保暖，出门带口罩。注意观察小儿自身反应情况，稍有征兆提前用抗菌素类药，一般效果较好。第二，加强锻炼，增强体质，早睡早起，生活要有规律（来源于1994年1月13日《中国气象报》 作者：刘蔚"/>
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </com.example.nan.foryou.MyScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/menu_icon"
+                    android:layout_weight="1"
+                    android:id="@+id/left_menu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showcurrentcityname"
+                    android:text="天河区"
+                    android:textSize="23dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="15"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/menu_icon"
+                    android:id="@+id/right_menu"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

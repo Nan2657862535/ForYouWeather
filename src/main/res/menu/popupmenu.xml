@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="添加城市"
+        android:id="@+id/AddCity"/>
+    <item android:title="删除城市"
+        android:id="@+id/DeleteCity"/>
+    <item android:title="查看城市"
+        android:id="@+id/QueryCity"/>
+    <item android:title="万年历"
+        android:id="@+id/Calendar"/>
+</menu>
